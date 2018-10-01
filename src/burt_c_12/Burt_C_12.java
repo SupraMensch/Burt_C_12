@@ -33,24 +33,28 @@ import java.util.Scanner;
 public class Burt_C_12
 {
 
-    
+    // Main method that accepts user input and demonstrates class functionality
     public static void main(String[] args)
     {
-        Scanner scanner =  new Scanner(System.in);
         int monthEntry;
         int yearEntry;
         
+        //Scanner 
+        Scanner scanner =  new Scanner(System.in);
+
+        //  Gather user input
         System.out.println("Enter a month (1-12): ");
         monthEntry = scanner.nextInt();
         
         System.out.println("Enter a year: ");
         yearEntry = scanner.nextInt();
         
+        //Create new MonthDays object
         MonthDays monthTest = new MonthDays(monthEntry, yearEntry);
         
+        //Print Conclusion of passed info
         System.out.println( monthTest.getNumberOfDays());
-        
-        
+
     }
     
 }
