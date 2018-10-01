@@ -28,17 +28,29 @@
 
 package burt_c_12;
 
-/**
- *
- * @author ChristopherBurt
- */
-public class Burt_C_12 {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Burt_C_12
+{
+
+    
+    public static void main(String[] args)
+    {
+        Scanner scanner =  new Scanner(System.in);
+        int monthEntry;
+        int yearEntry;
+        
+        System.out.println("Enter a month (1-12): ");
+        monthEntry = scanner.nextInt();
+        
+        System.out.println("Enter a year: ");
+        yearEntry = scanner.nextInt();
+        
+        MonthDays monthTest = new MonthDays(monthEntry, yearEntry);
+        
+        System.out.println( monthTest.getNumberOfDays());
+        
+        
     }
     
 }
